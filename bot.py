@@ -182,7 +182,7 @@ async def _(event):
             except Exception as e:
                 log.error(e)
                 return
-            msg = f"Welcome to {(await event.get_chat()).title}, {nm}!\nGood to see you here!"
+            msg = f"Welcome to {(await event.get_chat()).title}, {nm}!\nGood to see you here! Please check 📌Pin messages"
             butt = [Button.url("Channel", url=f"https://t.me/{channel}")]
             await event.edit(msg, buttons=butt)
     else:
